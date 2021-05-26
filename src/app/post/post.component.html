@@ -1,0 +1,279 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-9">
+                <div class="main-tintuc" *ngFor="let item of posts1">
+                    <div class="img-tintuc">
+                        <a href=""><img src="{{item.images}}" alt=""></a>
+                    </div>
+                    <div>
+                        <a class="the-a" routerLink="/post/{{item.id}}">
+                            <h3>{{item.title}}</h3>
+                        </a>
+                        <p>{{item.shortContent}}</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="sub-tintuc" >
+                    <ul>
+                        <li *ngFor="let item of posts3">
+                            <h5><a routerLink="/post/{{item.id}}">{{item.title}}</a></h5>
+                            <p>{{item.shortContent}}</p>
+                            <!-- [ngInnerHtml]="item.shortContent"                         -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <img src="assets/img/banner-tin-trai.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-4" >
+                <div class="news4" *ngFor="let item of posts4">
+                    <a class="the-a" routerLink="/post/{{item.id}}">
+                        <h5>{{item.title}}</h5>
+                    </a>
+                    <div class="tintuc-left">
+                        <img id="image-tintuc" src="{{item.images}}" alt="">
+                        <p>{{item.shortContent}}</p>
+                    </div>
+                    <hr>
+                </div>
+                
+            </div>
+
+            <div class="col-8">
+                <div>
+                    <img src="assets/img/banner-right.PNG" alt="">
+                </div>
+                <hr>
+                <div>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="container-fluid">
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                    <a class="nav-link active" aria-current="page" href="#">Kinh doanh</a>
+                                    <a class="nav-link" href="#">Quốc tế</a>
+                                    <a class="nav-link" href="#">Doanh nghiệp</a>
+                                    <a class="nav-link" href="#">Chứng khoán</a>
+                                    <a class="nav-link" href="#">Bất động sản</a>
+                                    <a class="nav-link" href="#">Bảo hiểm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="container-fluid">
+                    <div>
+                        <div class="row">
+                            <div class="col-12" id="tintucphu">
+                                <div>
+                                    <img src="assets/img/elon-musk.jpg" alt="" width="185px" height="125px">
+                                </div>
+                                <div>
+                                    <a class="the-a" href="">Elon Musk ám chỉ tesla đã bán bitcoin</a>
+                                    <p>Elon Musk ngầm ám chỉ đã bán hết Bitcoin khi đáp lại nghi vấn của một tài
+                                        khoản tên Whale</p>
+                                </div>
+
+                                <div>
+                                    <a class="the-a" href="">TP Bắc Ninh cách ly xã hội</a>
+                                    <p>TP Bắc Ninh với dân số hơn 220.000 người áp dụng cách ly xã hội theo chỉ thị
+                                        16.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row-tintuc">
+                            <div><a class="the-a" href="">Israel không kích phòng xét nghiệm Covid-19 duy nhất tại
+                                    Gaza </a></div>
+                            <div><a class="the-a" href="">Sáng 18/5 thêm 19 ca Covid-19 trong nước.</a></div>
+                            <div><a class="the-a" href="">Xe tải cố đè mặt xe cứu thương suốt 7 km.</a></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end tin cu -->
+
+<!-- quang cao -->
+<section>
+    <div class="container my-4">
+
+        <hr class="mb-5" />
+
+        <!--Carousel Wrapper-->
+        <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+            <!--Controls-->
+            <div class="controls-top">
+                <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i
+                        class="fa fa-chevron-left"></i></a>
+                <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+                        class="fa fa-chevron-right"></i></a>
+            </div>
+            <!--/.Controls-->
+
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+                <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                <li data-target="#multi-item-example" data-slide-to="1"></li>
+                <li data-target="#multi-item-example" data-slide-to="2"></li>
+            </ol>
+            <!--/.Indicators-->
+
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+
+                <!--First slide-->
+                <div class="carousel-item active">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="assets/img/facebook.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title"><a href="" class="the-a">Facebook đối mặt với khủng hoảng
+                                            lòng tin của người dùng</a></h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 clearfix d-none d-md-block">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="assets/img/homemobile.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title"><a href="" class="the-a">Làm 'nhà di động' tặng bạn gái
+                                            du lịch xuyên Việt</a></h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 clearfix d-none d-md-block">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="assets/img/car.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title"><a href="" class="the-a">Những mẫu xe rơi khỏi top 10 bán
+                                            chạy đầu 2021</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.First slide-->
+
+                <!--Second slide-->
+                <div class="carousel-item">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title"><a>asdsadasd</a></h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 clearfix d-none d-md-block">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title"><a>asdsadasd</a></h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 clearfix d-none d-md-block">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title"><a>asdsadasd</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Second slide-->
+
+                <!--Third slide-->
+                <div class="carousel-item">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title"><a>asdsadasd</a></h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 clearfix d-none d-md-block">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title"><a>asdsadasd</a></h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 clearfix d-none d-md-block">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title"><a>asdsadasd</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Third slide-->
+
+            </div>
+            <!--/.Slides-->
+
+        </div>
+        <!--/.Carousel Wrapper-->
+
+
+    </div>
+</section>
+<!-- end thong tin dn -->
+
+<!-- quang cao -->
+<!-- Start Midium Banner  -->
+<section class="midium-banner">
+    <div class="container">
+        <div class="row">
+            <!-- Single Banner  -->
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="single-banner">
+                    <img src="" alt="#">
+                </div>
+            </div>
+            <!-- /End Single Banner  -->
+            <!-- Single Banner  -->
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="single-banner">
+                    <img src="" alt="#">
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+</section>
